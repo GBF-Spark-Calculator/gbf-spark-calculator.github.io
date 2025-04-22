@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GBF Spark Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>GBF Spark Calculator</h1>
+
+    <div class="theme-toggle">
+      <label><input type="checkbox" id="darkModeToggle" /> Dark Mode</label>
+    </div>
+
+    <div class="input-group">
+      <label>Crystals</label>
+      <input type="number" id="crystals" step="any" />
+    </div>
+
+    <div class="input-group">
+      <label>Single Tickets</label>
+      <input type="number" id="singles" />
+    </div>
+
+    <div class="input-group">
+      <label>Ten-Pull Tickets</label>
+      <input type="number" id="tenPulls" />
+    </div>
+
+    <button id="calculateBtn">Calculate</button>
+    <button id="resetBtn">Reset</button>
+    <button id="exportBtn">Export Result</button>
+
+    <div id="result">
+      <p>Total Rolls: <span id="totalRolls">0</span></p>
+      <p>Rolls Left to Spark (300): <span id="remainingRolls">300</span></p>
+      <div class="progress-container">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Features of GBF Spark Calculator</h2>
+      <ul>
+        <li>✨ Live automatic calculation as you input values</li>
+        <li>🌗 Dark Mode toggle for a better visual experience</li>
+        <li>🧮 Option to manually click "Calculate" for confirmation</li>
+        <li>📊 Real-time progress bar showing your journey to 300 rolls</li>
+        <li>📤 Export your result to a downloadable .txt file</li>
+        <li>💾 Local storage support to keep your data even after a page reload</li>
+        <li>📱 Fully responsive – works perfectly on mobile, tablet, desktop, and even TVs</li>
+        <li>🔁 Reset button to quickly clear all inputs</li>
+        <li>✅ Supports fractional crystals (e.g., 150 crystals = 0.5 rolls)</li>
+      </ul>
+
+      <div style="margin-top: 50px;">
+        <p><strong>For any inquiries, feel free to contact me:</strong><br/>
+        📧 Email: <a href="mailto:gbfsparkcalculator@gmail.com">gbfsparkcalculator@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #6200ee;
+  --progress: #00c853;
+}
+
+.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --accent: #bb86fc;
+  --progress: #69f0ae;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  margin: 5px 10px 5px 0;
+  padding: 10px 15px;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.progress-container {
+  background: #ccc;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#progressBar {
+  background: var(--progress);
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+.theme-toggle {
+  margin: 10px 0;
+}
