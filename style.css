@@ -1,66 +1,58 @@
 body {
   font-family: Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: #f5f5f5;
   margin: 0;
   padding: 20px;
-  transition: background 0.3s, color 0.3s;
 }
 
-:root {
-  --bg: #ffffff;
-  --text: #000000;
-  --accent: #6200ee;
-  --progress: #00c853;
-}
-
-.dark {
-  --bg: #121212;
-  --text: #ffffff;
-  --accent: #bb86fc;
-  --progress: #69f0ae;
-}
-
-.container {
+.calculator {
   max-width: 600px;
+  background: #fff;
+  padding: 20px;
   margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.input-group {
-  margin: 10px 0;
+.inputs label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-input {
+input[type="number"] {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
 }
 
 button {
-  margin: 5px 10px 5px 0;
-  padding: 10px 15px;
-  background-color: var(--accent);
-  color: #fff;
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
 }
 
-.progress-container {
-  background: #ccc;
-  height: 20px;
+.result {
+  text-align: center;
+}
+
+.progress-bar {
+  background: #e0e0e0;
   border-radius: 5px;
-  overflow: hidden;
+  height: 20px;
+  width: 100%;
   margin-top: 10px;
 }
 
-#progressBar {
-  background: var(--progress);
+.progress {
+  background: #4caf50;
   height: 100%;
+  border-radius: 5px;
   width: 0%;
-  transition: width 0.4s ease;
-}
-
-.theme-toggle {
-  margin: 10px 0;
 }
